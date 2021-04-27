@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="weather">
+            <div class="weather__inner">
+                <div class="city">
+                    <div class="city__left">
+                        <div class="city__inner">
+                            <div class="city__city">Омск</div>
+                            <div class="city__location">
+                                <p><a href="#">Сменить город</a></p>
+                                <p><a href="#">Мое местоположение</a></p>
+                            </div>
+
+                        </div>
+                        <div class="city__gradus"></div>
+                    </div>
+                    <div class="sity_right">
+                        <button class="left">C</button>
+                        <button class="right">F</button>
+                        <!-- <label class="input-check"><input onchange="change_state(this)" type="checkbox" value="something" name="test"/> С F </label> -->
+                    </div>
+                </div>
+                <div class="current">
+                    <div class="current__icon sun"></div>
+                    <div class="current__temperature">15º</div>
+                    <div class="current__description">Преимущественно солнечно</div>
+                </div>
+
+                <div class="details">
+                    <div class="details__row">
+                        <div class="details__item">
+                            <div class="details__name">Ветер</div>
+                            <div class="details__value">5 м/c, западный</div>
+                        </div>
+                        <div class="details__item">
+                            <div class="details__name">Давление</div>
+                            <div class="details__value">752 мм рт. ст.</div>
+                        </div>
+                        <div class="details__item">
+                            <div class="details__name">Влажность</div>
+                            <div class="details__value">60%</div>
+                        </div>
+                        <div class="details__item">
+                            <div class="details__name">Вероятность дождя</div>
+                            <div class="details__value">10%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

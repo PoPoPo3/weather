@@ -1,0 +1,188 @@
+        @import 'vars';
+        @import 'fonts';
+        @import 'reset';
+        @import 'libs';
+        @import 'global';
+        $padding: 1em;
+        $icon-size: 50px;
+        // html[data-theme="day"] .weather,
+        // .weather {
+        //     background: linear-gradient(360deg, #3594bf 0%, #15abef 100%);
+        // }
+        // html[data-theme="night"] .weather,
+        // .weather {
+        //     background: linear-gradient(360deg, #3835ef 0%, #0e0c90 100%);
+        // }
+        /* this is the style of an uncheked "button" */
+        
+        // .input-check {
+        //     display: inline-block;
+        //     height: 20px;
+        //     padding: 5px 8px;
+        //     background: green;
+        //     width: 70px;
+        //     color: white;
+        //     opacity: 0.4;
+        //     border: 1px solid #FFFFFF;
+        //     box-sizing: border-box;
+        //     border-radius: 8px;
+        // }
+        // /* This is the style for a checked "button" */
+        // .input-check.checked {
+        //     background: red;
+        //     color: black;
+        //     font-weight: bold;
+        //     opacity: 0.4;
+        //     border: 1px solid #FFFFFF;
+        //     border-radius: 8px;
+        // }
+        // /* Hide the checkbox */
+        // .input-check input {
+        //     display: none
+        // }
+        button {
+            width: 40px;
+            height: 29px;
+            background-color: #498CEC;
+            outline: 0;
+            color: #fff;
+            border: 1px solid #FFFFFF;
+            opacity: 0.4;
+        }
+        
+        .left {
+            border-radius: 8px 0px 0px 8px;
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .right {
+            margin-left: -4px;
+            border-radius: 0px 8px 8px 0px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .city {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .city__city {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        
+        .city__location {
+            display: flex;
+            a {
+                color: #fff;
+                opacity: 0.6;
+                font-size: 18px;
+            }
+            p+p {
+                margin-left: 60px;
+            }
+        }
+        
+        .city__inner {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .weather {
+            width: 100%;
+            min-height: 100vh;
+            background: #498CEC;
+        }
+        
+        .weather__inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: $padding;
+        }
+        
+        .current {
+            margin-top: $padding *2;
+            text-align: center;
+            margin-bottom: $padding *2;
+            &__city {
+                font-size: 3em;
+            }
+            &__description {
+                font-size: 25px;
+                line-height: 30px;
+            }
+            &__temperature {
+                font-size: 180px;
+            }
+            &__icon {
+                display: inline-block;
+                margin-bottom: $padding;
+            }
+        }
+        
+        .forecast {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: $padding *2;
+            &__item {
+                text-align: center;
+            }
+            &__time {
+                margin-bottom: $padding;
+            }
+            &__icon {
+                width: $icon-size;
+                height: $icon-size;
+            }
+            &__temperature {
+                font-size: 1.5em;
+            }
+        }
+        
+        .cloud {
+            background-image: url("/images/cloud.svg");
+        }
+        
+        .cloudy {
+            background-image: url("/images/partlycloudy.svg");
+        }
+        
+        .rain {
+            background-image: url("/images/rain.svg");
+        }
+        
+        .strom {
+            background-image: url("/images/strom.svg");
+        }
+        
+        .sun {
+            background-image: url("/images/sun.svg");
+        }
+        
+        .cloud,
+        .cloudy,
+        .rain,
+        .strom,
+        .sun {
+            background-size: $icon-size;
+            background-repeat: no-repeat;
+        }
+        
+        .details {
+            &__row {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: $padding *2;
+                margin-top: $padding *5;
+            }
+            &__item {
+                flex: 1;
+            }
+            &__name {
+                margin-bottom: $padding;
+                opacity: 0.6;
+            }
+            &__value {
+                font-size: 1.5em;
+            }
+        }
